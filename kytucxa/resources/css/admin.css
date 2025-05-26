@@ -1,0 +1,128 @@
+/* Chung */
+.admin-chucnang {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-search {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 4px 10px;
+    border: 1px solid #aaa3a3;
+    border-radius: 20px;
+}
+
+.admin-search i {
+    margin-right: 8px;
+    font-size: 18px; 
+    color: #555; 
+    transition: color 0.3s ease;
+}
+
+.admin-search input {
+    width: 280px;
+    border: none; 
+    outline: none; 
+    font-size: 16px;
+    padding: 4px; 
+    color: #333; 
+}
+
+.admin-search button {
+    border: none;
+    background-color: #fff;
+}
+
+.admin-search:focus-within {
+    border-color: #5785e5; 
+}
+
+.admin-search:focus-within i {
+    color: #5785e5; 
+}
+
+.admin-body {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.admin-create,
+.admin-edit {
+    width: 600px;
+    margin: auto;
+    border-radius: 6px;
+}
+
+.form-group span {
+    color: red;
+    margin-left: 4px;
+}
+
+.form_footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_footer button,
+.form_footer a {
+    width: 120px;
+}
+
+/* Slider */
+.admin_sidebar {
+    height: 100vh; /* Đảm bảo sidebar luôn full chiều cao */
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 16.66%; /* 2/12 = 16.66% (tương đương col-md-2) */
+    background-color: #f8f9fa; 
+    border-right: 1px solid #ddd;
+    overflow-y: auto; 
+}
+
+.admin_sidebar-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    padding: 10px;
+}
+
+.admin_sidebar-title a {
+    font-size: 20px;
+    font-weight: 550;
+    background: linear-gradient(to right, #15ced6, #5785e5);
+    -webkit-background-clip: text; /* Áp dụng màu nền cho chữ */
+    -webkit-text-fill-color: transparent; /* Ẩn màu chữ gốc để lộ gradient */
+}
+
+.admin_sidebar-body {
+    border-top: 1px solid #ddd;
+}
+
+.admin__sidebar-link {
+    display: block;
+    font-size: 16px;
+    padding: 10px 8px;
+}
+
+.admin__sidebar-link:hover {
+    font-weight: 550;
+    color: var(--color-text-bright);
+    background-color: #498936;
+    border-radius: 4px;
+}
+
+.admin__sidebar-link i {
+    width: 28px;
+}
+
+.content-section {
+    margin-left: 16.66%; /* Đẩy nội dung qua phải để không bị che bởi sidebar */
+    height: 100vh;
+    overflow-y: auto; /* Cuộn nếu nội dung quá dài */
+}
+
+/* Danh mục - Category */
